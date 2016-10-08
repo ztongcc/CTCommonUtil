@@ -32,6 +32,7 @@
     NSLog(@"是否是URL %@", ct_isURL(@"http://www.aidu.com")?@"YES":@"NO");
 
     NSLog(@"是否是身份证号 %@", ct_isIdentityCard(@"411122XXXXXXXX3013")?@"YES":@"NO");
+    
 
 }
 

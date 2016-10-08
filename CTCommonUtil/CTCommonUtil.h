@@ -32,7 +32,7 @@ id ct_JSONObjectWithFilePath(NSString * filePath);
  *  Init a nib by nibName
  *
  */
-UINib * vj_nibWithNibName(NSString * nibName);
+UINib * ct_nibWithNibName(NSString * nibName);
 
 /**
  *  Init a nib in bundle by nibName
@@ -41,6 +41,6 @@ UINib * vj_nibWithNibName(NSString * nibName);
  *  @param bundle  bundle
  *
  */
-UINib * vj_nibWithNibNameInBundle(NSString * nibName, NSBundle * bundle);
+UINib * ct_nibWithNibNameInBundle(NSString * nibName, NSBundle * bundle);
 
 @end

@@ -46,12 +46,12 @@ inline id ct_JSONObjectWithFilePath(NSString * filePath)
     }
 }
 
-inline UINib * vj_nibWithNibName(NSString * nibName)
+inline UINib * ct_nibWithNibName(NSString * nibName)
 {
     return vj_nibWithNibNameInBundle(nibName, nil);
 }
 
-inline UINib * vj_nibWithNibNameInBundle(NSString * nibName, NSBundle * bundle)
+inline UINib * ct_nibWithNibNameInBundle(NSString * nibName, NSBundle * bundle)
 {
     return [UINib nibWithNibName:nibName bundle:bundle];
 }
