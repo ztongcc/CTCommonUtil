@@ -23,6 +23,23 @@ NSString * ct_timeInterval();
 
 
 /**
+ *   Initializes and returns a newly created file NSURL referencing the local file at path
+ */
+NSURL * ct_urlWithFilePath(NSString *filePath);
+
+/**
+ *   Initializes and returns a newly created file NSURL referencing the resource
+ */
+
+NSURL * ct_urlPathForResource(NSString *fileName, NSString * extension);
+
+/**
+ *   Initializes and returns a newly created file NSURL referencing the string
+ */
+NSURL * ct_urlWithString(NSString *string);
+
+
+/**
  *  Will develop under the path of file into the JSON Object
  *
  *  @param filePath 文件路径
@@ -32,10 +49,57 @@ NSString * ct_timeInterval();
 id ct_JSONObjectWithFilePath(NSString * filePath);
 
 /**
+ *  Will develop  the data into the JSON Object
+ *
+ *  @param data data
+ *
+ *  @return json Object
+ */
+id ct_JSONObjectWithData(NSData * data);
+
+
+/**
+ *  Will develop  the Object into the JSON string
+ *
+ *  @param obj <#obj description#>
+ *
+ *  @return json string
+ */
+id ct_JSONStringWithObj(id obj);
+
+/**
+ *  Judge the device is iPhone4
+ *
+ *  @return judge result
+ */
+BOOL ct_isiPhone4();
+
+/**
+ *  Judge the device is iPhone5
+ *
+ *  @return judge result
+ */
+BOOL ct_isiPhone5();
+
+/**
+ *  Judge the device is iPhone6
+ *
+ *  @return judge result
+ */
+BOOL ct_isiPhone6();
+
+/**
+ *  Judge the device is iPhone6p
+ *
+ *  @return judge result
+ */
+BOOL ct_isiPhone6p();
+
+/**
  *  Init a nib by nibName
  *
  */
-UINib * vj_nibWithNibName(NSString * nibName);
+UINib * ct_nibWithNibName(NSString * nibName);
 
 /**
  *  Init a nib in bundle by nibName
@@ -44,6 +108,32 @@ UINib * vj_nibWithNibName(NSString * nibName);
  *  @param bundle  bundle
  *
  */
-UINib * vj_nibWithNibNameInBundle(NSString * nibName, NSBundle * bundle);
+UINib * ct_nibWithNibNameInBundle(NSString * nibName, NSBundle * bundle);
+
+
+
+/**
+ *  init view controller from xib
+ *
+ */
+UIViewController * ct_instanceXIBController(Class vcClass);
+
+
+/**
+ *  scale the height
+ *  @param orgHeight  414 尺寸下的高度
+ *
+ */
+CGFloat ct_ratioHeight(CGFloat orgHeight);
+
+
+/**
+ *  scale the height
+ *  @param orgWidth   414 尺寸下的宽度
+ *  @param orgHeight  414 尺寸下的高度
+ *
+ */
+CGFloat ct_ratioByRate(CGFloat orgWidth, CGFloat orgHeight);
+
 
 @end
