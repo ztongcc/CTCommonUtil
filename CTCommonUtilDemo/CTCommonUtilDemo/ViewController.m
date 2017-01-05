@@ -32,8 +32,15 @@
     NSLog(@"是否是URL %@", ct_isURL(@"http://www.aidu.com")?@"YES":@"NO");
 
     NSLog(@"是否是身份证号 %@", ct_isIdentityCard(@"411122XXXXXXXX3013")?@"YES":@"NO");
-    
 
+    for (int i = 0; i < 100000; i ++) {
+        NSLog(@"-- %d", i);
+        NSString * str = [NSString stringWithFormat:@"%d", i];
+        [[NSUserDefaults standardUserDefaults] setObject:@"fjsfsd而纷纷为南京客服你金额为你疯狂呢及开发能借我分家房客网南京复垦费卡呢我库房呢我看你发金额看我能发金额看附件二看我能飞飞机而渴望能分解肯借我可烦你结尾款奶粉你发金额看我能发金额可为你封你发金额看我能发金额可为你封看我南方可为" forKey:str];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
+    
+    NSLog(@"%@", ct_pathInDocument(@"dewf"));
 }
 
 - (void)didReceiveMemoryWarning

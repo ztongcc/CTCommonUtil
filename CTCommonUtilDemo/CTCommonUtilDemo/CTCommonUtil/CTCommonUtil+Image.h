@@ -102,5 +102,4 @@ UIImage * ct_getLaunchImage();
  */
 UIImage * ct_getLaunchImageLandscape();
 
-
 @end
