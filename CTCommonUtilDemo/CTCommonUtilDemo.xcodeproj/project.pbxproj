@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		842F78DE1E2C77B9008FF0F7 /* CTCommonUtil+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 842F78DD1E2C77B9008FF0F7 /* CTCommonUtil+JSON.m */; };
 		845626CB1E1E12C800A5DD25 /* CTCommonUtil+UserDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = 845626CA1E1E12C800A5DD25 /* CTCommonUtil+UserDefault.m */; };
 		845C87D21E165E9300E84452 /* CTCommonUtil+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 845C87D11E165E9300E84452 /* CTCommonUtil+Image.m */; };
 		84897AAE1D6AD1CA000C8BFB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84897AAD1D6AD1CA000C8BFB /* main.m */; };
@@ -32,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		842F78DC1E2C77B9008FF0F7 /* CTCommonUtil+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CTCommonUtil+JSON.h"; sourceTree = "<group>"; };
+		842F78DD1E2C77B9008FF0F7 /* CTCommonUtil+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CTCommonUtil+JSON.m"; sourceTree = "<group>"; };
 		845626C91E1E12C800A5DD25 /* CTCommonUtil+UserDefault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CTCommonUtil+UserDefault.h"; sourceTree = "<group>"; };
 		845626CA1E1E12C800A5DD25 /* CTCommonUtil+UserDefault.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CTCommonUtil+UserDefault.m"; sourceTree = "<group>"; };
 		845C87D01E165E9300E84452 /* CTCommonUtil+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CTCommonUtil+Image.h"; sourceTree = "<group>"; };
@@ -138,6 +141,8 @@
 				845C87D11E165E9300E84452 /* CTCommonUtil+Image.m */,
 				845626C91E1E12C800A5DD25 /* CTCommonUtil+UserDefault.h */,
 				845626CA1E1E12C800A5DD25 /* CTCommonUtil+UserDefault.m */,
+				842F78DC1E2C77B9008FF0F7 /* CTCommonUtil+JSON.h */,
+				842F78DD1E2C77B9008FF0F7 /* CTCommonUtil+JSON.m */,
 				84897AE21D6B0021000C8BFB /* CTCommonUtil.h */,
 				84897AE31D6B0021000C8BFB /* CTCommonUtil.m */,
 			);
@@ -253,6 +258,7 @@
 				84897AE61D6B0021000C8BFB /* CTCommonUtil.m in Sources */,
 				84897AAE1D6AD1CA000C8BFB /* main.m in Sources */,
 				84897AE41D6B0021000C8BFB /* CTCommonUtil+File.m in Sources */,
+				842F78DE1E2C77B9008FF0F7 /* CTCommonUtil+JSON.m in Sources */,
 				845C87D21E165E9300E84452 /* CTCommonUtil+Image.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

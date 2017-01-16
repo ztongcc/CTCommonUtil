@@ -82,54 +82,6 @@ inline NSURL * ct_urlWithString(NSString *string)
     return [NSURL  URLWithString:string];
 }
 
-
-inline id ct_JSONObjectWithData(NSData * data)
-{
-    if (data == nil)
-    {
-        NSLog(@"data 为 Nil");
-        return nil;
-    }
-    NSError * error = nil;
-    id jsonData = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
-    if (error)
-    {
-        NSLog(@"error = %@", error); return nil;
-    }
-    if (jsonData && [NSJSONSerialization isValidJSONObject:jsonData])
-    {
-        return jsonData;
-    }
-    else
-    {
-        NSLog(@"数据不是有效的JSON格式");
-        return nil;
-    }
-}
-
-inline id ct_JSONStringWithObj(id obj)
-{
-    if (obj == nil)
-    {
-        NSLog(@" object is cann't nil");
-        return @"";
-    }
-    
-    if (![NSJSONSerialization isValidJSONObject:obj])
-    {
-        NSLog(@" object is cann't JSON Object");
-        return @"";
-    }
-    NSError * error;
-    NSData * data = [NSJSONSerialization dataWithJSONObject:obj options:NSJSONWritingPrettyPrinted error:&error];
-    if (error)
-    {
-        NSLog(@" object is cann't convert to data");
-        return @"";
-    }
-    return [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-}
-
 inline BOOL ct_isiPhone4()
 {
     if ([[UIScreen mainScreen] bounds].size.height==480)

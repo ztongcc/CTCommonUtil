@@ -39,33 +39,7 @@ NSURL * ct_urlPathForResource(NSString *fileName, NSString * extension);
 NSURL * ct_urlWithString(NSString *string);
 
 
-/**
- *  Will develop under the path of file into the JSON Object
- *
- *  @param filePath 文件路径
- *
- *  @return json Object
- */
-id ct_JSONObjectWithFilePath(NSString * filePath);
 
-/**
- *  Will develop  the data into the JSON Object
- *
- *  @param data data
- *
- *  @return json Object
- */
-id ct_JSONObjectWithData(NSData * data);
-
-
-/**
- *  Will develop  the Object into the JSON string
- *
- *  @param obj <#obj description#>
- *
- *  @return json string
- */
-id ct_JSONStringWithObj(id obj);
 
 /**
  *  Judge the device is iPhone4

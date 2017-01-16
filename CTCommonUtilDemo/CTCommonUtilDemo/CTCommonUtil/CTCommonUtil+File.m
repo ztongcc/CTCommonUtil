@@ -10,7 +10,6 @@
 
 @implementation CTCommonUtil (File)
 
-
 // 文件路径
 NSString * ct_pathInDocument(NSString * fileName)
 {
