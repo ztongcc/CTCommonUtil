@@ -82,6 +82,25 @@ inline NSURL * ct_urlWithString(NSString *string)
     return [NSURL  URLWithString:string];
 }
 
+inline NSString * ct_stringWithFromat(id format)
+{
+    if (!format || [format isKindOfClass:[NSNull class]])
+    {
+        return @"";
+    }
+    if ([format isKindOfClass:[NSDictionary class]] ||
+        [format isKindOfClass:[NSArray class]])
+    {
+        return [format description];
+    }
+    if ([format isKindOfClass:[NSObject class]] &&
+        [format respondsToSelector:@selector(description)])
+    {
+        return [format description];
+    }
+    return [NSString stringWithFormat:@"%@", format];
+}
+
 inline BOOL ct_isiPhone4()
 {
     if ([[UIScreen mainScreen] bounds].size.height==480)

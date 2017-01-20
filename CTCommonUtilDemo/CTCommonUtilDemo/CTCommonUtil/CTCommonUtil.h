@@ -39,8 +39,7 @@ NSURL * ct_urlPathForResource(NSString *fileName, NSString * extension);
 NSURL * ct_urlWithString(NSString *string);
 
 
-
-
+NSString * ct_stringWithFromat(id format);
 /**
  *  Judge the device is iPhone4
  *
